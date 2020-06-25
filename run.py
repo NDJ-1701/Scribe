@@ -26,6 +26,10 @@ def allowed_file(filename):
 def index():
     return render_template("index.html")
 
+@app.route('/favicon.ico')
+def favicon():
+    return app.send_static_file('favicon.ico')
+
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
