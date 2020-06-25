@@ -152,7 +152,7 @@ def send():
     print(pdf_path)
     print(pdf_filename)
     message = Mail(
-        from_email='class-scribe@mail.com',
+        from_email='Johnstno@oregonstate.edu',
         to_emails=receiver,
         subject='Scribe: Your notes.',
         html_content="<p>Scribe has sent you notes!  View the attached PDF for audio transcription and visual aides.</p><br><br><p>Class Scribe</p>")
